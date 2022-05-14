@@ -1,6 +1,6 @@
 # volumes
 /logs
-/symfony
+#/symfony
 /db
 
 /.env.*

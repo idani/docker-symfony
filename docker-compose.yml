@@ -18,11 +18,12 @@ services:
         container_name: php-fpm
         build:
             context: ./php-fpm
+            dockerfile: Dockerfile7
             args:
                 PHP_XDEBUG_MODE: ${PHP_XDEBUG_MODE}
                 PHP_XDEBUG_CLIENT_PORT: ${PHP_XDEBUG_CLIENT_PORT}
                 PHP_XDEBUG_CLIENT_HOST: ${PHP_XDEBUG_CLIENT_HOST}
-                SYMFONY_CLI_VERSION: 4.27.4
+                SYMFONY_CLI_VERSION: 4.28.1
         ports:
             - "${PHP_PORT}:9001"
         volumes:
